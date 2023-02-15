@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<menu>
+  
+  <menuItem>
+    <!--<image>images/menublip.gif </image>-->
+    <text>FABRICACION</text>
+    <subMenu>
+      <menuItem>
+        <text>RESERVA</text>
+        <url>Inicio.aspx</url>
+      </menuItem>
+      <menuItem>
+        <text>FABRICA</text>
+        <url>frmDetalle.aspx</url>
+      </menuItem>
+      <menuItem>
+        <text>LIBERA LOTE</text>
+        <url>frmLLote.aspx</url>
+      </menuItem>
+      <menuItem>
+        <text>ANULA RESERVA</text>
+        <url>frmAnula.aspx</url>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+
+  <menuItem>
+    <!--<image>images/menublip.gif </image>-->
+    <text>REPORTES</text>
+    <subMenu>
+      <menuItem>
+        <text>ORDEN DE MEZCLA</text>
+        <url>frmReporteFab.aspx</url>
+      </menuItem>
+      <menuItem>
+        <text>COSTOS</text>
+        <url>frmReporteCos.aspx</url>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+
+  <menuItem>
+    <!--<image>images/menublip.gif </image>-->
+    <text>GENERAL</text>
+    <subMenu>
+      <menuItem>
+        <text>AGREGA FORMULA</text>
+        <url>frmAgrFor.aspx</url>
+      </menuItem>
+      <menuItem>
+        <text>ACTUALIZA FORMULA</text>
+        <url>frmActFor.aspx</url>
+      </menuItem>
+      <menuItem>
+        <text>ACTUALIZA DATOS</text>
+        <javascriptcommand>pop_actUsu();</javascriptcommand>
+         </menuItem>
+     </subMenu>
+  </menuItem>
+  
+  <menuItem>
+    <!--<image>images/menublip.gif </image>-->
+    <text>HOME</text>
+    <url>Bienvenido.aspx</url>
+  </menuItem>
+
+</menu>

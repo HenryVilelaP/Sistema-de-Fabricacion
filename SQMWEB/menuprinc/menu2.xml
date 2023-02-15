@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <menuItem>
+    <image>images/menublip.gif </image>
+    <text>MESA DE PARTES</text>
+    <url>frmMesaPE.aspx</url>
+  </menuItem>
+
+  <menuItem>
+    <image>images/menublip.gif </image>
+    <text>INICIO CAPACITACION</text>
+    <url>frmReg_ini.aspx</url>
+  </menuItem>
+
+  <menuItem>
+    <image>images/menublip.gif </image>
+    <text>RESULTADOS CAPACITACION</text>
+    <url>frmReg_res.aspx</url>
+  </menuItem>
+
+  <menuItem>
+    <image>images/menublip.gif </image>
+    <text>GENERAL</text>
+    <subMenu>
+      <menuItem>
+        <text>CONSULTA DE EXPEDIENTE</text>
+        <javascriptcommand>mipi();</javascriptcommand>
+      </menuItem>
+      <menuItem>
+        <text>CONSULTA DE PERSONA NATURAL</text>
+        <javascriptcommand>pop_window8();</javascriptcommand>
+      </menuItem>
+      <menuItem>
+        <text>REPORTE</text>
+        <url>frmReporteCar.aspx</url>
+      </menuItem>
+      <menuItem>
+        <text>CAMBIO CONTRASEÑA</text>
+        <url>frmAct_usu.aspx</url>
+      </menuItem>
+    </subMenu>
+  </menuItem>
+
+  <menuItem>
+    <image>images/menublip.gif </image>
+    <text>HOME</text>
+    <url>Bienvenida.aspx</url>
+  </menuItem>
+
+</menu>

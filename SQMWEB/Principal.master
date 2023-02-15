@@ -1,0 +1,95 @@
+﻿<%@ Register TagPrefix="cc1" Namespace="skmMenu" Assembly="skmMenu" %>
+<%@ Master Language="VB" CodeFile="Principal.master.vb" Inherits="Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Inicio</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<script type="text/javascript" language="javascript" src="Scripts/script.js"></script>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: center">
+        &nbsp;
+        <table border="0" cellpadding="0" cellspacing="0" 
+            style="width: 900px; height: 100%">
+            <tr style="background-image: url('Imagenes/banner.png'); vertical-align: text-bottom; height: 95px; width: 100%; text-align: right;">
+                <td align="right" style="height: 95px; vertical-align: bottom; width: 900px; text-align: right;" 
+                    valign="baseline">
+                    <br/>
+                    <asp:LoginView ID="LoginView2" runat="server">
+                        <LoggedInTemplate>
+                            <table border="0" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td colspan="3" width="900">
+                                        <asp:Label ID="Label1" runat="server"  Font-Size="Small" ForeColor="RED" 
+                                            Text="Usuario : "></asp:Label>
+                                        &nbsp;<asp:LoginName ID="LoginName1" runat="server" Font-Size="Small" 
+                                        ForeColor="red" />
+                                        &nbsp;
+                                        <asp:LoginStatus ID="LoginStatus2" runat="server" Font-Size="Small" 
+                                            ForeColor="RED" LogoutText="Cerrar Sesión" 
+                                            OnLoggingOut="LoginStatus2_LoggingOut" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                    </td>
+            </tr>
+                      
+            <tr>
+                <td align="center" style="height: 35px; vertical-align: top; width: 900px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                              <%-- <script language="javascript" src="scripts/liveclock.js">
+                </script>        --%>
+                
+      <cc1:Menu ID="Menu1" runat="server" BackColor="#E0E0E0" BorderStyle="Double" 
+        BorderWidth="1px" Font-Names="Verdana" Font-Size="X-Small" height="20px" 
+        layout="horizontal" menufadedelay="1" width="900px" ForeColor="#003300">
+        <UnselectedMenuItemStyle BackColor="Transparent" Font-Names="Verdana" 
+            Font-Size="X-Small" ForeColor="#993333" HorizontalAlign="Center" 
+            VerticalAlign="Middle" width="175px" />
+        <SelectedMenuItemStyle BackColor="WhiteSmoke" Font-Names="Verdana" 
+            Font-Size="X-Small" ForeColor="Black" HorizontalAlign="Center" 
+            VerticalAlign="Middle" Font-Bold="False" width="80px" />
+    </cc1:Menu>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            
+            <tr>
+                <td align="center" valign ="top" style="width: 900px; height: 300px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+                            <br />
+                        </p>
+                        <p style="height: 104px">
+                            &nbsp;</p>
+                      </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+                                  
+            
+            <tr>
+                    <td colspan="4" align ="center"  
+                        style="height: 70px; text-align: right; background-image: url('Imagenes/banner_inf.png'); vertical-align: bottom; width: 100%;">
+                        <span style="font-size: 12pt; color: #ffffff; font-family: Verdana"><strong><em>
+                        &nbsp; </em></strong>
+                       
+                        <span style="font-size: 9pt; color: #ffffff; font-family: Verdana">© Copyright 
+                        SQM Perú - 2014. Todos los Derechos reservados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+                        <span style="font-size: 7pt">&nbsp;&nbsp; Resolución Recomendada 1024 x 768</span></span> &nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+             </tr>
+                
+                
+        </table>
+    </div>
+    </form>
+</body>
+</html>
